@@ -7,23 +7,31 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex justify-between items-center p-4 w-full bg-[#E5FFBA]">
-        <div className="flex items-center bg-[#003B36] rounded-full px-4 py-2">
+      <header className="flex justify-between items-center p-4 w-full bg-[#E5FFBA] relative">
+        <div className="flex items-center bg-[#003B36] rounded-full px-4 py-2 z-10">
           <div className="w-6 h-6 bg-[#003B36] rounded-full flex items-center justify-center mr-2">
             <span className="text-white">💰</span>
           </div>
           <span className="text-white">0$</span>
         </div>
         
-        <div className="text-[#003B36] text-3xl">
-          <img src="https://i.imgur.com/hDtT2NR.png" alt="N" className="h-8 w-auto" />
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <img 
+            src="https://i.imgur.com/hDtT2NR.png" 
+            alt="N" 
+            className="h-12 w-auto"
+          />
         </div>
         
         <button 
-          className="w-10 h-10 bg-[#003B36] rounded-full flex items-center justify-center"
+          className="w-10 h-10 bg-[#003B36] rounded-full flex items-center justify-center z-10"
           onClick={() => setIsMenuOpen(true)}
         >
-          <img src="https://i.imgur.com/iYbSW5x.png" alt="Menu" className="w-6 h-6" />
+          <div className="w-6 h-4 flex flex-col justify-between">
+            <div className="h-0.5 w-full bg-[#E5FFBA]"></div>
+            <div className="h-0.5 w-full bg-[#E5FFBA]"></div>
+            <div className="h-0.5 w-full bg-[#E5FFBA]"></div>
+          </div>
         </button>
       </header>
 

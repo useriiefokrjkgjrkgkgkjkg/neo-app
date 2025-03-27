@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import ImageSlider from "@/components/ImageSlider";
 import ServiceCard from "@/components/ServiceCard";
 
 const services = [
@@ -11,9 +12,8 @@ const services = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#B8FAB4]">
-      <div className="animate-slideDown">
-        <Header />
-      </div>
+      <Header />
+      <ImageSlider />
       
       <div className="px-4 py-8 animate-fadeIn">
         <div className="relative w-full aspect-[2/1] rounded-3xl bg-[#003B36] mb-4">
