@@ -8,13 +8,21 @@ export default function Header() {
   return (
     <>
       <header className="flex justify-between items-center p-4 w-full bg-[#E5FFBA] relative">
-        <div className="flex items-center bg-[#003B36] rounded-full px-4 py-2 z-10">
-          <div className="w-6 h-6 bg-[#003B36] rounded-full flex items-center justify-center mr-2">
-            <span className="text-white">💰</span>
+        {/* Баланс */}
+        <div className="flex items-center">
+          <div className="flex items-center bg-[#003B36] rounded-full pl-3 pr-6 py-2 gap-2">
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img 
+                src="https://imgur.com/61gVcqx" 
+                alt="Wallet" 
+                className="w-6 h-6 object-contain"
+              />
+            </div>
+            <span className="text-[#E5FFBA] text-lg font-medium">0$</span>
           </div>
-          <span className="text-white">0$</span>
         </div>
         
+        {/* Логотип */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img 
             src="https://i.imgur.com/hDtT2NR.png" 
@@ -23,6 +31,7 @@ export default function Header() {
           />
         </div>
         
+        {/* Меню */}
         <button 
           className="w-10 h-10 bg-[#003B36] rounded-full flex items-center justify-center z-10"
           onClick={() => setIsMenuOpen(true)}
@@ -35,10 +44,19 @@ export default function Header() {
         </button>
       </header>
 
-      {/* Меню */}
-      <div className={`menu-overlay ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
-        <div className="fixed top-0 right-0 h-full w-64 bg-[#E5FFBA] p-4 z-50">
-          <img src="https://i.imgur.com/gbBdw24.png" alt="Menu content" className="w-full h-auto" />
+      {/* Оверлей меню */}
+      <div 
+        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ${
+          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`} 
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <div className="fixed top-0 right-0 h-full w-64 bg-[#E5FFBA] p-4">
+          <img 
+            src="https://i.imgur.com/gbBdw24.png" 
+            alt="Menu content" 
+            className="w-full h-auto" 
+          />
         </div>
       </div>
     </>
