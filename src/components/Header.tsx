@@ -9,17 +9,15 @@ export default function Header() {
     <>
       <header className="flex justify-between items-center p-4 w-full bg-[#E5FFBA] relative">
         {/* Баланс */}
-        <div className="flex items-center">
-          <div className="flex items-center bg-[#003B36] rounded-full pl-3 pr-6 py-2 gap-2">
-            <div className="w-8 h-8 flex items-center justify-center">
-              <img 
-                src="https://imgur.com/61gVcqx" 
-                alt="Wallet" 
-                className="w-6 h-6 object-contain"
-              />
-            </div>
-            <span className="text-[#E5FFBA] text-lg font-medium">0$</span>
-          </div>
+        <div className="relative">
+          <img 
+            src="https://imgur.com/61gVcqx" 
+            alt="Balance background" 
+            className="h-10"
+          />
+          <span className="absolute right-6 top-1/2 -translate-y-1/2 text-[#003B36] text-lg font-medium">
+            0$
+          </span>
         </div>
         
         {/* Логотип */}
