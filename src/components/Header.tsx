@@ -11,7 +11,7 @@ export default function Header() {
         {/* Баланс */}
         <div className="relative">
           <img 
-            src="https://imgur.com/a/VAOnHx6" 
+            src="https://imgur.com/68Dupqy" 
             alt="Balance background" 
             className="h-10"
           />
