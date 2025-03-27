@@ -16,14 +16,14 @@ export default function Header() {
         </div>
         
         <div className="text-[#003B36] text-3xl">
-          <img src="https://i.imgur.com/QmBC4Ty.png" alt="N" className="h-8 w-auto" />
+          <img src="https://i.imgur.com/hDtT2NR.png" alt="N" className="h-8 w-auto" />
         </div>
         
         <button 
           className="w-10 h-10 bg-[#003B36] rounded-full flex items-center justify-center"
           onClick={() => setIsMenuOpen(true)}
         >
-          <img src="https://i.imgur.com/r2fyuxJ.png" alt="Menu" className="w-6 h-6" />
+          <img src="https://i.imgur.com/iYbSW5x.png" alt="Menu" className="w-6 h-6" />
         </button>
       </header>
 
