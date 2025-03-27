@@ -16,17 +16,6 @@ export default function Home() {
       <ImageSlider />
       
       <div className="px-4 py-8 animate-fadeIn">
-        <div className="relative w-full aspect-[2/1] rounded-3xl bg-[#003B36] mb-4">
-          {/* Слайдер будет добавлен позже */}
-        </div>
-
-        {/* Точки */}
-        <div className="flex justify-center gap-2 mb-8">
-          <div className="w-2 h-2 rounded-full bg-[#003B36]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#003B36]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#003B36]"></div>
-        </div>
-
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-[#003B36] text-center animate-fadeIn">
             Выберите услугу<br />дизайна

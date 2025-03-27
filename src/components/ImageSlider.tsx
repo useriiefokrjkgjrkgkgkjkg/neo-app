@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 
 const images = [
-  'https://i.imgur.com/YourImage1.jpg',
-  'https://i.imgur.com/YourImage2.jpg',
-  'https://i.imgur.com/YourImage3.jpg',
-  'https://i.imgur.com/YourImage4.jpg'
+  'https://i.imgur.com/bYR0xw8.png',
+  'https://i.imgur.com/r3ojTdM.png',
+  'https://i.imgur.com/Swyq8NY.png',
+  'https://i.imgur.com/q18NojN.png'
 ];
 
 export default function ImageSlider() {
@@ -21,28 +21,34 @@ export default function ImageSlider() {
   }, []);
 
   return (
-    <div className="relative w-full h-48 bg-[#003B36] overflow-hidden">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute w-full h-full transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <img
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
+    <div className="px-4 py-2">
+      <div className="relative w-full aspect-[2/1] rounded-3xl bg-[#003B36] overflow-hidden">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute w-full h-full transition-all duration-1000 ease-in-out ${
+              index === currentIndex 
+                ? 'opacity-100 scale-100' 
+                : 'opacity-0 scale-95'
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full object-cover rounded-3xl"
+            />
+          </div>
+        ))}
+      </div>
       
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="flex justify-center gap-2 mt-4">
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-              index === currentIndex ? 'bg-[#E5FFBA]' : 'bg-[#003B36] bg-opacity-50'
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentIndex 
+                ? 'bg-[#003B36] scale-125' 
+                : 'bg-[#003B36] opacity-50'
             }`}
             onClick={() => setCurrentIndex(index)}
           />
