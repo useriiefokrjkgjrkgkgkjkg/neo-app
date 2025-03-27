@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --primary: #1A2C1E;
-  --accent: #9EFF5C;
-  --background: #E4FFCF;
+  --primary: #003B36;
+  --accent: #B8FAB4;
+  --header-bg: #E5FFBA;
+  --background: #B8FAB4;
 }
 
 body {
@@ -17,4 +18,19 @@ body {
 
 .whitespace-pre {
   white-space: pre;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 40;
+}
+
+.menu-overlay.active {
+  display: block;
 }

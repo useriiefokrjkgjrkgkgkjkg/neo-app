@@ -4,34 +4,34 @@ import ServiceCard from "@/components/ServiceCard";
 const services = [
   {
     title: "3D\ndesign",
-    image: "/3d.jpg"
+    image: "https://i.imgur.com/bYR0xw8.png"
   },
   {
     title: "GFX\navatar",
-    image: "/gfx.jpg"
+    image: "https://i.imgur.com/r3ojTdM.png"
   },
   {
     title: "2D\ndesign",
-    image: "/2d.jpg"
+    image: "https://i.imgur.com/Swyq8NY.png"
   },
   {
     title: "Forum\ndesign",
-    image: "/forum.jpg"
+    image: "https://i.imgur.com/q18NojN.png"
   }
 ];
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#9EFF5C]/30">
+    <main className="min-h-screen bg-[#B8FAB4]">
       <Header />
       
       <div className="px-4 py-8">
-        <div className="relative w-full aspect-[2/1] rounded-3xl bg-[#1A2C1E] mb-8">
+        <div className="relative w-full aspect-[2/1] rounded-3xl bg-[#003B36] mb-8">
           {/* Слайдер будет добавлен позже */}
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-4xl font-bold text-[#1A2C1E] text-center">
+          <h2 className="text-4xl font-bold text-[#003B36] text-center">
             Выберите услугу<br />дизайна
           </h2>
 
@@ -45,7 +45,7 @@ export default function Home() {
             ))}
           </div>
 
-          <button className="w-full py-4 bg-[#1A2C1E] rounded-full text-[#9EFF5C] text-xl font-medium">
+          <button className="w-full py-4 bg-[#003B36] rounded-full text-white text-xl font-medium">
             Наши отзывы
           </button>
         </div>
