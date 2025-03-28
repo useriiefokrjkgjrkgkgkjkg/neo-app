@@ -15,7 +15,7 @@ export default function Home() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://i.imgur.com/S6NXHjG.png")'
+          backgroundImage: 'url("https://imgur.com/a/hAnfYlP")'
         }}
       />
     </main>
