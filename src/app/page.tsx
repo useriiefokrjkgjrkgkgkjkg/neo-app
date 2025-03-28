@@ -3,10 +3,10 @@ import ImageSlider from "@/components/ImageSlider";
 import ServiceCard from "@/components/ServiceCard";
 
 const services = [
-  { image: "https://i.imgur.com/bYR0xw8.png" },
-  { image: "https://i.imgur.com/r3ojTdM.png" },
-  { image: "https://i.imgur.com/Swyq8NY.png" },
-  { image: "https://i.imgur.com/q18NojN.png" }
+  { image: "https://imgur.com/a/cdRqJ2v" },
+  { image: "https://imgur.com/a/cdRqJ2v" },
+  { image: "https://imgur.com/a/cdRqJ2v" },
+  { image: "https://imgur.com/a/cdRqJ2v" }
 ];
 
 export default function Home() {
@@ -14,9 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-black relative">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("https://i.imgur.com/S6NXHjG.png")'
-        }}
+        style={{ backgroundImage: 'url(https://i.imgur.com/cdRqJ2v.png)' }}
       />
     </main>
   );
