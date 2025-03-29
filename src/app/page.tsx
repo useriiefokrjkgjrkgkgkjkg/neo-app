@@ -2,14 +2,17 @@ import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black relative animate-fadeIn">
+    <main className="min-h-screen bg-black relative animate-fadeIn flex flex-col">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat h-screen w-screen max-w-screen-sm mx-auto"
+        className="flex-1 relative"
         style={{ 
           backgroundImage: 'url(https://i.imgur.com/vTpUuaK.png)',
-          backgroundSize: '100% 100%',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
-          maxHeight: '926px' // высота iPhone 13
+          backgroundRepeat: 'no-repeat',
+          minHeight: '100vh',
+          width: '100%',
+          maxWidth: '100%'
         }}
       />
       <Navigation />
