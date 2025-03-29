@@ -6,7 +6,7 @@ export default function Home() {
       <div 
         className="background-container"
         style={{ 
-          backgroundImage: 'url(https://i.imgur.com/vTpUuaK.png)'
+          backgroundImage: 'url(https://i.imgur.com/syXOQMm.png)'
         }}
       />
       <Navigation />
