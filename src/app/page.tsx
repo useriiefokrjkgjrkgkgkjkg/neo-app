@@ -14,7 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-black relative">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(https://i.imgur.com/cdRqJ2v.png)' }}
+        style={{ backgroundImage: 'url(https://i.imgur.com/9wZbroC.png)' }}
       />
     </main>
   );
